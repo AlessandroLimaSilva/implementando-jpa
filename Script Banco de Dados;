@@ -1,0 +1,17 @@
+IF NOT EXISTS CREATE DATABASE one;
+
+USE one;
+
+IF NOT EXISTS CREATE TABLE aluno(
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    	nome VARCHAR(200) NOT NULL,
+    	idade INTEGER NOT NULL,
+    	estado VARCHAR(200) NOT NULL
+);    
+
+INSERT INTO aluno(nome,idade,estado) VALUES ("Rebecca lima", 4, "São Paulo");
+INSERT INTO produto(nome,idade,estado) VALUES("Kelly gomes", 40,"São Paulo");
+INSERT INTO produto(nome,idade,estado) VALUES("Jose Carlos", 61, "Lisboa");
+INSERT INTO produto(nome, idade, estado) VALUES("Maria das Dores", 59,"Minas Gerais");
+
+SELECT * FROM aluno;
